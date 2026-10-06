@@ -82,7 +82,7 @@ Everything here is cheap now and unbackfillable later. Four research documents i
 
 ## v1.x Requirements
 
-Deferred but planned. Tracked, not in the v1 roadmap.
+Deferred but planned. Tracked as post-v1 phases 6–8 in `ROADMAP.md`, visible but not part of the v1 commitment.
 
 ### Speaking
 
@@ -136,17 +136,79 @@ Deferred but planned. Tracked, not in the v1 roadmap.
 
 ## Traceability
 
-Filled during roadmap creation.
+Mapped during roadmap creation (`.planning/ROADMAP.md`, 2026-10-06). Every v1 requirement appears in exactly one phase.
+
+### v1
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| (pending roadmap) | | |
+| FND-01 | Phase 1 — Foundation & Irreversible Contracts | Pending |
+| FND-02 | Phase 1 — Foundation & Irreversible Contracts | Pending |
+| FND-03 | Phase 1 — Foundation & Irreversible Contracts | Pending |
+| FND-04 | Phase 1 — Foundation & Irreversible Contracts | Pending |
+| FND-05 | Phase 1 — Foundation & Irreversible Contracts | Pending |
+| FND-06 | Phase 1 — Foundation & Irreversible Contracts | Pending |
+| FND-07 | Phase 1 — Foundation & Irreversible Contracts | Pending |
+| FND-08 | Phase 1 — Foundation & Irreversible Contracts | Pending |
+| FND-09 | Phase 1 — Foundation & Irreversible Contracts | Pending |
+| FND-10 | Phase 1 — Foundation & Irreversible Contracts | Pending |
+| COST-01 | Phase 1 — Foundation & Irreversible Contracts | Pending |
+| COST-02 | Phase 1 — Foundation & Irreversible Contracts | Pending |
+| COST-03 | Phase 1 — Foundation & Irreversible Contracts | Pending |
+| COST-04 | Phase 1 — Foundation & Irreversible Contracts | Pending |
+| COST-05 | Phase 1 — Foundation & Irreversible Contracts | Pending |
+| COST-06 | Phase 1 — Foundation & Irreversible Contracts | Pending |
+| CONT-01 | Phase 2 — Scaffold Curriculum, Scenario 1 | Pending |
+| CONT-02 | Phase 2 — Scaffold Curriculum, Scenario 1 | Pending |
+| CONV-01 | Phase 3 — The Text Loop, One Scenario | Pending |
+| CONV-02 | Phase 3 — The Text Loop, One Scenario | Pending |
+| CONV-03 | Phase 3 — The Text Loop, One Scenario | Pending |
+| CONV-04 | Phase 3 — The Text Loop, One Scenario | Pending |
+| CONV-05 | Phase 3 — The Text Loop, One Scenario | Pending |
+| CONV-06 | Phase 3 — The Text Loop, One Scenario | Pending |
+| CONV-07 | Phase 3 — The Text Loop, One Scenario | Pending |
+| CONV-08 | Phase 3 — The Text Loop, One Scenario | Pending |
+| CONV-09 | Phase 3 — The Text Loop, One Scenario | Pending |
+| CONV-10 | Phase 3 — The Text Loop, One Scenario | Pending |
+| HBT-01 | Phase 3 — The Text Loop, One Scenario | Pending |
+| HBT-02 | Phase 3 — The Text Loop, One Scenario | Pending |
+| HBT-04 | Phase 3 — The Text Loop, One Scenario | Pending |
+| HBT-05 | Phase 3 — The Text Loop, One Scenario | Pending |
+| LISN-01 | Phase 4 — Listening, The Partner Speaks | Pending |
+| LISN-02 | Phase 4 — Listening, The Partner Speaks | Pending |
+| LISN-03 | Phase 4 — Listening, The Partner Speaks | Pending |
+| LISN-04 | Phase 4 — Listening, The Partner Speaks | Pending |
+| ACC-05 | Phase 4 — Listening, The Partner Speaks | Pending |
+| ACC-01 | Phase 5 — Make It Real | Pending |
+| ACC-02 | Phase 5 — Make It Real | Pending |
+| ACC-03 | Phase 5 — Make It Real | Pending |
+| ACC-04 | Phase 5 — Make It Real | Pending |
+| ERR-01 | Phase 5 — Make It Real | Pending |
+| ERR-02 | Phase 5 — Make It Real | Pending |
+| ERR-03 | Phase 5 — Make It Real | Pending |
+| ERR-04 | Phase 5 — Make It Real | Pending |
+| ERR-05 | Phase 5 — Make It Real | Pending |
+| HBT-03 | Phase 5 — Make It Real | Pending |
+
+**Notes on two placements that moved from `research/SUMMARY.md`'s ordering:**
+- **ACC-05** (HTTPS tunnel) sits in Phase 4, not Phase 5. Its own wording is "established before the phase that needs a secure context, not at the end" — with TTS in v1, Phase 4 is the first phase to touch a real phone, so the tunnel is built there.
+- **HBT-03** (zero-cost activity) sits in Phase 5, per SUMMARY's correction of ARCHITECTURE: its content source is swappable, the component is not, so it is not blocked behind a review system that intentionally has no data yet.
+
+### v1.x
+
+| Requirement | Phase | Status |
+|-------------|-------|--------|
+| REV-01 … REV-09 | Phase 6 — Watchlist Review & Scaffold Withdrawal | Deferred (v1.x) |
+| SPK-01 … SPK-07 | Phase 7 — Speaking, Push-to-Talk Input | Deferred (v1.x, gated on Spike 1) |
+| SCALE-01 … SCALE-04 | Phase 8 — Content Scale-Out & Long-Tail | Deferred (v1.x) |
 
 **Coverage:**
 - v1 requirements: 47 total
-- Mapped to phases: 0
-- Unmapped: 47 ⚠️
+- Mapped to phases: 47 ✓
+- Unmapped: 0 ✓
+- Duplicated across phases: 0 ✓
+- v1.x requirements: 20 total, all mapped to post-v1 phases 6–8
 
 ---
 *Requirements defined: 2026-10-06*
-*Last updated: 2026-10-06 after initial definition*
+*Last updated: 2026-10-06 after roadmap creation — traceability and coverage filled*
