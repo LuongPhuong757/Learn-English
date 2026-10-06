@@ -23,7 +23,7 @@ See: .planning/PROJECT.md (updated 2026-10-06)
 Phase: 1 of 5 (Foundation & Irreversible Contracts)
 Plan: 0 of 0 in current phase
 Status: Ready to plan
-Last activity: 2026-10-06 — Project initialized: PROJECT.md, config.json, domain research (4 parallel researchers + synthesis), REQUIREMENTS.md (47 v1 requirements), ROADMAP.md (5 v1 phases + 3 v1.x)
+Last activity: 2026-10-06 — Project initialized: PROJECT.md, config.json, domain research (4 parallel researchers + synthesis), REQUIREMENTS.md (47 v1 requirements), ROADMAP.md (5 v1 phases + 3 v1.x). 7-day self-use gate removed at the owner's direction.
 
 Progress: [░░░░░░░░░░] 0%
 
@@ -58,13 +58,12 @@ Decisions are logged in PROJECT.md Key Decisions table. Those most likely to sha
 - **Init**: Streak credited on the learner's first utterance, server-side, before any recognition returns.
 - **Init**: No FSRS/SM-2. A capped ~20-item priority watchlist with no due dates and no visible debt.
 - **Init**: Postgres both sides, one always-on Node process, never serverless.
-- **Init**: Owner accepted a hard 7-consecutive-day self-use gate between Phase 3 and Phase 4.
 
 ### Pending Todos
 
 **Open decision for the owner (raised by the roadmapper, not yet answered):**
 
-A strict 7-day gate after Phase 3 means the owner does not hear English until week two, which sits against their stated wish to hear it from week one. LISN-01 alone — speak the reply aloud, fallback voice, no caching, no rate control — has no dependency beyond the Phase 1 turn protocol and could be pulled into Phase 3. LISN-02/03/04 cannot. Decide before Phase 3 planning.
+LISN-01 alone — speak the reply aloud, fallback voice, no caching, no rate control — has no dependency beyond the Phase 1 turn protocol and could be pulled into Phase 3, so the owner hears English in the same phase the loop first works. LISN-02/03/04 cannot. Decide before Phase 3 planning.
 
 ### Blockers/Concerns
 
@@ -84,5 +83,5 @@ Items acknowledged and deferred at milestone close, most recent first:
 ## Session Continuity
 
 Last session: 2026-10-06
-Stopped at: Project initialization complete — PROJECT.md, config.json, research (5 files), REQUIREMENTS.md, ROADMAP.md all written and committed; repo pushed to github.com/LuongPhuong757/Learn-English
+Stopped at: Project initialization complete; 7-day self-use gate removed at the owner's direction — PROJECT.md, config.json, research (5 files), REQUIREMENTS.md, ROADMAP.md all written and committed; repo pushed to github.com/LuongPhuong757/Learn-English
 Resume file: None

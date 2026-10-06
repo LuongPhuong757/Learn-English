@@ -4,9 +4,9 @@
 
 This roadmap is built backward from one sentence: **every single day the learner opens the app and successfully produces at least one English utterance.** Every phase below is judged on whether it moves that, and the phases are ordered so that the things which cannot be fixed later happen first.
 
-The shape is: lay the unbackfillable contracts and the budget choke point before a single model call exists (Phase 1); author the scaffold curriculum as real written material on a parallel non-engineering track (Phase 2); prove the text loop end to end with one scenario and then stop and let the owner use it for seven consecutive days (Phase 3); give the owner English in their ears (Phase 4); put it on a URL, behind auth, with silent error capture running (Phase 5). Review, withdrawal, speaking and content scale-out are v1.x and sit below the line.
+The shape is: lay the unbackfillable contracts and the budget choke point before a single model call exists (Phase 1); author the scaffold curriculum as real written material on a parallel non-engineering track (Phase 2); prove the text loop end to end with one scenario (Phase 3); give the owner English in their ears (Phase 4); put it on a URL, behind auth, with silent error capture running (Phase 5). Review, withdrawal, speaking and content scale-out are v1.x and sit below the line.
 
-Two things in this roadmap are not engineering phases and must not be read as optional: the **scaffold content track** (Phase 2) and the **7-day self-use gate** (between Phase 3 and Phase 4). The research is unambiguous that the project dies at exactly those two points.
+One thing in this roadmap is not an engineering phase and must not be read as optional: the **scaffold content track** (Phase 2). The research is unambiguous that the project most often dies at exactly that point — the curriculum is the product thesis and it is the thing most likely never to get written.
 
 ### Departures from `research/SUMMARY.md`
 
@@ -45,7 +45,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 
 - [ ] **Phase 1: Foundation & Irreversible Contracts** - Every contract that cannot be backfilled later, plus the single budget choke point, in place before the first model call exists
 - [ ] **Phase 2: Scaffold Curriculum — Scenario 1** - Hand-authored content track, parallel to Phase 1, gating Phase 3: the structures, order, ~800 words and Vietnamese copy that *are* the product
-- [ ] **Phase 3: The Text Loop, One Scenario** - A learner who types nothing completes a real English conversation by tapping, and banks a streak — then the 7-day gate
+- [ ] **Phase 3: The Text Loop, One Scenario** - A learner who types nothing completes a real English conversation by tapping, and banks a streak
 - [ ] **Phase 4: Listening — The Partner Speaks** - The owner hears slowed, clear English on every turn, on a real phone
 - [ ] **Phase 5: Make It Real — Deploy, Auth, Silent Error Capture** - Friends reach it at a URL, see only their own data, and every error is being recorded weeks before any review screen exists
 
@@ -58,19 +58,6 @@ Decimal phases appear between their surrounding integers in numeric order.
 ---
 
 ## Checkpoints
-
-### ⛔ The 7-Day Self-Use Gate — between Phase 3 and Phase 4
-
-**This is a hard checkpoint, not a suggestion.** The owner uses the Phase 3 text loop for **7 consecutive days** before any further feature is built. No Phase 4 work — not planning, not spikes, not "just the audio unlock" — starts until it resolves.
-
-| Outcome | Meaning | Consequence |
-|---------|---------|-------------|
-| **PASS** — 7 consecutive days, each with at least one produced utterance | The loop is returnable-to. The product thesis survived contact with its only real user. | Phase 4 is unblocked. Proceed. |
-| **FAIL** — any missed day inside the window | The loop is not yet returnable-to. This product fails at retention, not at features. | **Stop. Do not build Phase 4, 5 or anything else.** Diagnose why the owner did not return — session too long, scaffold too thin, friction at open, the scenario is boring — fix it as a Phase 3 revision, and restart the 7-day count from zero. |
-
-Rationale (PITFALLS, carried through SUMMARY): if the loop does not survive 7 days of the owner's own use in text, voice will not rescue it — it will only make the corpse more expensive. This is the cheapest real evidence available in the whole project and it is bought early on purpose.
-
-**Note on timing.** The owner's stated intent is to hear English "from the first week, not the last phase." The gate makes that week two rather than week one, because the gate is strict and nothing is built during it. Phase 4 is placed immediately after the gate — it is the very first thing that happens on day 8 — which is as early as a strict gate allows. If the owner later decides week one matters more than gate purity, LISN-01 alone (speak the partner's reply aloud, browser-side fallback voice, no caching, no rate control) has no dependency beyond the Phase 1 turn protocol and can be pulled into Phase 3; LISN-02, 03 and 04 cannot and would stay in Phase 4.
 
 ### The Phase 2 content gate — before Phase 3
 
@@ -184,13 +171,13 @@ Carried from `research/SUMMARY.md § Research Flags`, renumbered to this roadmap
 - The assessor is a **separate call** with no persona and no conversation history, fired in parallel the instant the utterance arrives, fire-and-forget, and structurally incapable of failing a turn. Its prompt must not contain "student," "learner," or "encourage."
 - Context windowing to the last 3–4 turns plus a compact state summary fixes drift, quadratic cost and latency with one mechanism.
 - HBT-04: a missed day is never a loss or a reset. Progress is a non-decreasing count of days practiced.
-- **This phase ends at the 7-day gate.** Build nothing else until it resolves.
+- **Use it yourself before moving on.** The gate was removed at the owner's direction, but the evidence it was meant to buy is still the cheapest in the project: if the loop is not returnable-to in text, nothing added later rescues it. Treat real daily use as a signal to watch, not a blocker.
 
 ---
 
 ### Phase 4: Listening — The Partner Speaks
 **Goal**: The owner hears English spoken aloud on every turn of every session, slowed to a beginner's pace, on their actual iPhone over a real HTTPS URL — directly treating the listening weakness they named, with none of the recognition risk.
-**Depends on**: Phase 3 **and a PASS on the 7-day self-use gate**
+**Depends on**: Phase 3
 **Requirements**: LISN-01, LISN-02, LISN-03, LISN-04, ACC-05
 **Blocking spikes**: Spike 6 (iOS secure-context + audio-unlock smoke test on a real iPhone over a tunnel) — **first task of the phase**
 **Research**: Not required — the mechanism is known; the risk is the iOS surface
@@ -312,12 +299,9 @@ Carried from `research/SUMMARY.md § Research Flags`, renumbered to this roadmap
 |-------|----------------|--------|-----------|
 | 1. Foundation & Irreversible Contracts | 0/TBD | Not started | - |
 | 2. Scaffold Curriculum — Scenario 1 | 0/TBD | Not started | - |
-| ⛔ 7-Day Self-Use Gate | — | Not reached | - |
 | 3. The Text Loop, One Scenario | 0/TBD | Not started | - |
 | 4. Listening — The Partner Speaks | 0/TBD | Not started | - |
 | 5. Make It Real — Deploy, Auth, Error Capture | 0/TBD | Not started | - |
-
-*(The gate row sits between Phase 3 and Phase 4 in execution order; it is listed after Phase 2 only because the table is sorted by phase number.)*
 
 ### v1.x
 
