@@ -1,0 +1,36 @@
+# Secrets — shared API key lives here, never commit
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+build/
+.next/
+out/
+
+# Local databases
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+*.db-wal
+*.db-shm
+
+# Audio recordings (learner voice — private)
+/uploads/
+/recordings/
+*.webm
+*.wav
+*.m4a
+
+# OS / editor
+.DS_Store
+*.log
+.vscode/
+.idea/
